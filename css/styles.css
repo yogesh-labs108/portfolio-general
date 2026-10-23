@@ -920,11 +920,15 @@ main { position: relative; z-index: 1; }
   font-size: .72rem; letter-spacing: .06em; text-transform: uppercase;
   padding: 7px 12px; border-radius: 999px; background: var(--cream); color: #0a0a0a; font-weight: 600;
 }
-.impact li { position: relative; padding-left: 22px; margin-bottom: 8px; }
+.impact { margin: 0 0 18px; padding: 0; list-style: none; }
+.impact li { position: relative; padding-left: 22px; margin-bottom: 8px; color: var(--text-dim); font-size: .94rem; line-height: 1.45; }
 .impact li::before {
   content: ""; position: absolute; left: 0; top: .55em; width: 10px; height: 10px; border-radius: 50%;
   background: var(--violet); box-shadow: 0 0 12px var(--violet);
 }
+.impact--tight { margin: 0 0 20px; }
+.impact--tight li { margin-bottom: 10px; }
+.project__copy > .stack { margin: 0 0 22px; }
 
 /* Pipeline flow */
 .project__flow {

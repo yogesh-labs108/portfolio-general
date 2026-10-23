@@ -572,51 +572,23 @@
           </div>
 
           <div class="project__copy">
-            <p class="project__intro reveal">When a food-delivery user goes quiet for a month — are they leaving, or just shopping that way? I answered that on <strong>3.42 million real Instacart orders</strong> with SQL, then designed the first win-back test and checked whether a coupon would pay back.</p>
+            <p class="project__intro reveal">When a grocery user goes quiet for a month — are they leaving, or just shopping that way? I used SQL on <strong>3.42M real Instacart orders</strong> to find who is actually at risk, design a win-back A/B test, and check if a coupon would pay back.</p>
 
-            <div class="findings reveal" data-delay="60" aria-label="Key findings">
-              <div class="finding">
-                <strong>25% → 49%</strong>
-                <span>Weekly users are a quarter of people and half of orders</span>
-              </div>
-              <div class="finding">
-                <strong>1.3% → 13.2%</strong>
-                <span>After one quiet month, weekly users lapse again ~10× more</span>
-              </div>
-              <div class="finding">
-                <strong>~₹6 break-even</strong>
-                <span>Blanket coupons lose money — most people return anyway</span>
-              </div>
+            <ul class="impact impact--tight reveal" data-delay="80">
+              <li>Weekly habit users drive ~half the orders — and break after one quiet month</li>
+              <li>First test should be a free nudge, not a blanket coupon</li>
+              <li>Order behaviour is real; campaign lift and money figures are labeled assumptions</li>
+            </ul>
+
+            <ul class="stack reveal" data-delay="120">
+              <li>Python</li><li>SQL</li><li>Streamlit</li><li>Excel</li><li>A/B design</li>
+            </ul>
+
+            <div class="project__flow reveal" data-delay="160" aria-label="Pipeline">
+              <span>Orders</span><i></i><span>SQL segments</span><i></i><span>A/B design</span><i></i><span>Unit economics</span><i></i><span>Decision</span>
             </div>
 
-            <div class="accordion reveal" data-delay="100">
-              <details open>
-                <summary data-cursor="hover">What I built</summary>
-                <p>A full retention pipeline: SQL segments and lapse risk, an A/B experiment design (sample size, readout, guardrails), an Excel unit-economics model (LTV / CAC / coupon ROI), and a Streamlit dashboard. Same idea as CRM win-back — but with evidence before spend.</p>
-              </details>
-              <details open>
-                <summary data-cursor="hover">Stack</summary>
-                <ul class="stack"><li>Python</li><li>SQL (DuckDB)</li><li>Streamlit</li><li>Excel</li><li>A/B design</li></ul>
-              </details>
-              <details open>
-                <summary data-cursor="hover">My part</summary>
-                <p>I built clean fact tables, the analyses, sample sizing, a simulated A/B readout on real control outcomes, and the money model. <strong>Behaviour is real. Treatment lift is simulated. Rupee figures are assumptions.</strong></p>
-              </details>
-              <details open>
-                <summary data-cursor="hover">Impact</summary>
-                <ul class="impact">
-                  <li>Target win-back at frequent users right after their first lapse — not every quiet user</li>
-                  <li>Test a free nudge before a blanket coupon</li>
-                  <li>Clear line between real behaviour and simulated campaign results</li>
-                </ul>
-              </details>
-            </div>
-
-            <div class="project__flow reveal" data-delay="200" aria-label="Pipeline">
-              <span>Orders</span><i></i><span>SQL segments</span><i></i><span>A/B design</span><i></i><span>Unit economics</span><i></i><span>Decision memo</span>
-            </div>
-
-            <div class="project__links reveal" data-delay="260">
+            <div class="project__links reveal" data-delay="200">
               <a class="btn btn--ghost magnetic" href="https://github.com/yogesh-labs108/retention-growth-lab" target="_blank" rel="noopener" data-cursor="hover"><span>View on GitHub ↗</span></a>
               <a class="btn btn--ghost magnetic" href="https://github.com/yogesh-labs108/retention-growth-lab/blob/main/docs/memo.md" target="_blank" rel="noopener" data-cursor="hover"><span>Decision memo</span></a>
             </div>
